@@ -119,11 +119,6 @@ This project is licensed under the MIT License. See the LICENSE file for details
 1. **Install dependencies:**
 
    ```pwsh
-rm -r node_modules
-del package-lock.json
-npm install
-npm run dev
-  
    npm install
    ```
 
@@ -139,6 +134,7 @@ rm -r node_modules
 del package-lock.json
 npm install
 npm run dev
+ ```
 
 3. **Configure API URL:**
    - If needed, set the backend API URL in your frontend `.env` or config files (e.g., `VITE_API_URL=http://localhost:8000/api/`).
