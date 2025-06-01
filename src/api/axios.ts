@@ -10,9 +10,14 @@ const api = axios.create({
 });
 
 api.interceptors.request.use((config) => {
-  const auth = getStoredAuth();
-  if (auth?.token) {
-    config.headers.Authorization = `Bearer ${auth.token}`;
+  // Do not add Authorization header for login or register endpoints
+  const isAuthEndpoint = config.url?.includes('/auth/login') || config.url?.includes('/auth/register');
+  if (!isAuthEndpoint) {
+    const auth = getStoredAuth();
+    if (auth?.token) {
+      config.headers = config.headers || {};
+      config.headers.Authorization = `Bearer ${auth.token}`;
+    }
   }
   return config;
 });
