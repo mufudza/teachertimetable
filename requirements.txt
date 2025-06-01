@@ -1,0 +1,30 @@
+# Requires Python >=3.12
+# pip will ignore this line, but it documents the version requirement for users.
+Django==5.0.1
+# Django REST Framework and JWT
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.3.0
+# CORS
+django-cors-headers==4.3.1
+# Celery and Redis
+celery==5.3.6
+redis==5.0.1
+# Environment variables
+python-dotenv==1.0.0
+# API docs
+drf-yasg==1.21.7
+# Image support
+Pillow==10.1.0
+# For type hints and static analysis (optional, but recommended)
+typing-extensions>=4.0.0
+# For testing
+pytest==8.1.1
+pytest-django==4.8.0
+# For cross-platform compatibility (optional, but useful)
+python-dateutil>=2.8.2
+# For frontend build (if using Django to serve static files)
+whitenoise==6.6.0
+# For async support (optional, if using async views)
+asgiref>=3.7.2
+# For admin UI improvements (optional)
+django-admin-interface==0.27.2
