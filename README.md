@@ -25,7 +25,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 1. **Clone the repository:**
 
    ```pwsh
-   git clone <your-repo-url>
+   git clone <https://github.com/mufudza/teachertimetable.git>
    cd teacherTimetable
    ```
 
@@ -134,7 +134,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ### Project Structure
 
-- `teacherTimetable/` — React app root
+- `teachertimetable/` — React app root
 - `src/pages/Timetable.tsx` — Main timetable UI
 - `src/components/Notifications.tsx` — Notification UI
 - `src/api/lessons.ts` — API calls for lessons
